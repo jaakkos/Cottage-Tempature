@@ -1,0 +1,109 @@
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (21.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTempatures (20100103115251)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTempatures (20100103115251)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "tempatures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cottage_id" integer, "temp" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100103115251')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tempatures")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-03 14:18:57) [GET]
+
+ActionController::RoutingError (No route matches "/1/5,25" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#add (for 127.0.0.1 at 2010-01-03 14:19:16) [GET]
+  Parameters: {"temp"=>"5,25", "cottage_id"=>"1"}
+
+SyntaxError (/home/jaakko/gits/cottemp/app/controllers/tempatures_controller.rb:7: syntax error, unexpected $undefined):
+  
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (17.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TempaturesController#add (for 127.0.0.1 at 2010-01-03 14:19:32) [GET]
+  Parameters: {"temp"=>"5,25", "cottage_id"=>"1"}
+  [4;36;1mTempature Create (0.7ms)[0m   [0;1mINSERT INTO "tempatures" ("temp", "created_at", "updated_at", "cottage_id") VALUES(NULL, '2010-01-03 12:19:32', '2010-01-03 12:19:32', NULL)[0m
+Rendering tempatures/add
+Completed in 163ms (View: 76, DB: 1) | 200 OK [http://localhost/log/1/5,25]
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mTempature Load (0.7ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mTempature Destroy (0.9ms)[0m   [0;1mDELETE FROM "tempatures" WHERE "id" = 1[0m
+  [4;35;1mTempature Load (0.4ms)[0m   [0mSELECT * FROM "tempatures" [0m
+
+
+Processing TempaturesController#add (for 127.0.0.1 at 2010-01-03 14:25:08) [GET]
+  Parameters: {"temp"=>"5,25", "cottage_id"=>"1"}
+  [4;36;1mTempature Create (0.7ms)[0m   [0;1mINSERT INTO "tempatures" ("temp", "created_at", "updated_at", "cottage_id") VALUES(5.0, '2010-01-03 12:25:08', '2010-01-03 12:25:08', 1)[0m
+Rendering tempatures/add
+Completed in 48ms (View: 11, DB: 1) | 200 OK [http://localhost/log/1/5,25]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-03 14:25:25) [GET]
+
+ActionController::RoutingError (No route matches "/log/1/5.25" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-03 14:26:27) [GET]
+
+ActionController::RoutingError (No route matches "/log/1/5.25" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TempaturesController#add (for 127.0.0.1 at 2010-01-03 14:26:32) [GET]
+  Parameters: {"temp"=>"5,25", "cottage_id"=>"1"}
+  [4;35;1mTempature Create (0.6ms)[0m   [0mINSERT INTO "tempatures" ("temp", "created_at", "updated_at", "cottage_id") VALUES(5.0, '2010-01-03 12:26:32', '2010-01-03 12:26:32', 1)[0m
+Rendering tempatures/add
+Completed in 28ms (View: 1, DB: 1) | 200 OK [http://localhost/log/1/5,25]
+
+
+Processing TempaturesController#add (for 127.0.0.1 at 2010-01-03 14:26:40) [GET]
+  Parameters: {"temp"=>"5,25", "cottage_id"=>"1"}
+  [4;36;1mTempature Create (0.6ms)[0m   [0;1mINSERT INTO "tempatures" ("temp", "created_at", "updated_at", "cottage_id") VALUES(5.0, '2010-01-03 12:26:40', '2010-01-03 12:26:40', 1)[0m
+Rendering tempatures/add
+Completed in 27ms (View: 2, DB: 1) | 200 OK [http://localhost/log/1/5,25]
+
+
+Processing TempaturesController#add (for 127.0.0.1 at 2010-01-03 14:30:16) [GET]
+  Parameters: {"temp"=>"5,25", "cottage_id"=>"1"}
+  [4;36;1mTempature Create (0.7ms)[0m   [0;1mINSERT INTO "tempatures" ("temp", "created_at", "updated_at", "cottage_id") VALUES(5.25, '2010-01-03 12:30:16', '2010-01-03 12:30:16', 1)[0m
+Rendering tempatures/add
+Completed in 78ms (View: 10, DB: 1) | 200 OK [http://localhost/log/1/5,25]

@@ -1,0 +1,2 @@
+module TempaturesHelper
+end
