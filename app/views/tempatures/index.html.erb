@@ -1,4 +1,5 @@
 <h1>Tempatures#index</h1>
+<p>Last reading: <%= Tempature.last.temp.to_f %> C at <%= Tempature.last.created_at.to_s %>
 <p>
   <%= image_tag @chart.to_url %>
 </p>
