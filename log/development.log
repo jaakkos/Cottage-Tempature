@@ -176,3 +176,152 @@ Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 15:57:48) [GE
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
 Rendering tempatures/index
 Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:01:04) [GET]
+  [4;36;1mTempature Load (0.9ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:02:09) [GET]
+  [4;36;1mTempature Load (0.7ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:02:53) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:07:09) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 459ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:07:11) [GET]
+  [4;35;1mTempature Load (0.6ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:08:51) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:08:53) [GET]
+  [4;35;1mTempature Load (0.6ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:09:48) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:09:50) [GET]
+  [4;35;1mTempature Load (0.8ms)[0m   [0mSELECT * FROM "tempatures" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:12:50) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:12:51) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:17:29) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:21:10) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+
+NoMethodError (undefined method `labels=' for #<GC4R::API::GoogleLineChart:0x102a417c8>):
+  app/controllers/tempatures_controller.rb:21:in `index'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:21:11) [GET]
+  [4;36;1mTempature Load (0.7ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+
+NoMethodError (undefined method `labels=' for #<GC4R::API::GoogleLineChart:0x102f12478>):
+  app/controllers/tempatures_controller.rb:21:in `index'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:21:17) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:24:35) [GET]
+  [4;36;1mTempature Load (0.7ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:24:37) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:24:52) [GET]
+  [4;36;1mTempature Load (0.7ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
+
+
+Processing TempaturesController#index (for 127.0.0.1 at 2010-01-07 16:24:56) [GET]
+  [4;36;1mTempature Load (0.6ms)[0m   [0;1mSELECT * FROM "tempatures" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tempatures" [0m
+Rendering tempatures/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/tempatures]
