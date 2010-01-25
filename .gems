@@ -1,7 +1,7 @@
 json
 sinatra
-mongo_mapper
 mongo_ext
 nmeans-pony --source gems.github.com
 smtp_tls
 haml
+rails
