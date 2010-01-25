@@ -1,5 +1,5 @@
 json
 sinatra
 mongo_mapper
-nmeans-pony
+nmeans-pony --source gems.github.com
 smtp_tls

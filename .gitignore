@@ -1,2 +1,4 @@
 conf/*
 /conf/**
+tmp/**
+tmp/logs/*
