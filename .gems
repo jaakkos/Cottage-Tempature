@@ -1,8 +1,9 @@
 json
 sinatra
-mongo_ext
+haml
+rails
+mongo_ext --version 0.18.2
+mongo --version 0.18.2
 mongo_mapper
 nmeans-pony --source gems.github.com
 smtp_tls
-haml
-rails
