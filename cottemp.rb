@@ -41,7 +41,7 @@ get '/log/:api_key/:temp' do
     @cottage.tempatures << @tempature
     if @tempature.temp <= @cottage.alert_temp
       Pony.mail(:to => @cottage.alert_emails.join(","),
-                :from => "noreply@suutarla.com",
+                :from => ENV['MAIL_USER'],
                 :subject => "#{@cottage.name} tempature is under #{@cottage.alert_temp}",
                 :body => erb(:alert_email), 
                 :via => :smtp, 
