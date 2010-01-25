@@ -1,0 +1,38 @@
+%h2
+  Edit:
+  =@cottage.name
+  
+%form{:action => "/cottages/#{@cottage.id}", :method => :post}
+  %fieldset
+    %legend
+      Cottage
+    %ul
+      %li
+        %label{:for => "name"}
+          Name:
+        %input{:type => "text", :name => "cottage[name]", :id => "name", :value => @cottage.name}
+      %li
+        %label{:for => "desc"}
+          Description:
+        %textarea{:name => "cottage[desc]", :id => "desc", :rows => 3, :cols => 50}= @cottage.desc
+      %li
+        %label{:for => "alert_temp"}
+          Alert tempature:
+        %input{:type => "text", :name => "cottage[alert_temp]", :id => "alert_temp", :value => @cottage.alert_temp}
+        Celsius
+      %li
+        %label{:for => "alert_emails"}
+          Alert emails:
+        %textarea{:name => "cottage[alert_emails]", :id => "alert_emails", :rows => 3, :cols => 50}= @cottage.alert_emails.join(',')  
+      %li
+        %label{:for => "alerts_disabled"}
+          Alert disbled:
+        %input{:type => "checkbox", :name => "cottage[alerts_disabled]", :id => "alerts_disabled", :value => @cottage.alerts_disabled}     
+      %li
+        %label{:for => "api_key"}
+          API key:
+        %input{:type => "text", :name => "cottage[api_key]", :id => "api_key", :value => @cottage.api_key}   
+      %li
+        %label
+        %input{:type => "hidden", :value => "put", :name => "_method"}
+        %input{:type => "submit", :value => "Save", :name => "Save"}

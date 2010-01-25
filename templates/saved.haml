@@ -1,0 +1,7 @@
+%ul
+  %li= @tempature.id
+  %li= @tempature.temp
+  %li= params[:temp]
+  %li= @tempature.changed?
+%ul
+  %li= Tempature.all()

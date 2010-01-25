@@ -1,0 +1,23 @@
+%h2
+  = @cottage.name
+  %em
+    %a{:href => "/cottages/#{@cottage.id}/edit"}
+      edit
+
+%ul
+  %li 
+    Description:
+    = @cottage.desc
+  %li
+    Alert tempature:
+    = @cottage.alert_temp
+  %li
+    Alert emails:
+    = @cottage.alert_emails.join(",")
+  %li 
+    Alerts are disabled:
+    = @cottage.alerts_disabled
+    
+%span
+  %a{:href => "/cottages"}
+    << Back

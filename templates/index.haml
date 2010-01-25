@@ -1,0 +1,29 @@
+%h2 Cottages
+
+%table
+  %thead
+    %tr
+      %th
+        Name
+      %th
+        Alert tempature
+      %th
+        Last tempature
+      %th
+        Readed at
+      %th 
+        Last alert send
+  %tbody
+    - for cottage in @cottages
+      %tr
+        %td
+          %a{:href => "/cottages/#{cottage.id}"}
+            = cottage.name
+        %td
+          = cottage.alert_temp
+        %td
+          = cottage.tempatures.last(:order => 'created_at').temp
+        %td
+          = cottage.tempatures.last(:order => 'created_at').created_at.to_s(:short)
+        %td
+          = cottage.last_alert_send_at.to_s(:short)
